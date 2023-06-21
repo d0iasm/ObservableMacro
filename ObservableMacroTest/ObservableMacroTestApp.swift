@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ObservableMacroTestApp: App {
+    @State private var model = FoodTruckModel(orders: [Order()], donuts: [Donut()])
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DonutMenu(model: model)
         }
     }
 }

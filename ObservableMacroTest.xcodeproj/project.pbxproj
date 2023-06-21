@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0126BC9F2A42FF46001573DF /* ObservableMacroTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BC9E2A42FF46001573DF /* ObservableMacroTestApp.swift */; };
-		0126BCA12A42FF46001573DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BCA02A42FF46001573DF /* ContentView.swift */; };
 		0126BCA32A42FF47001573DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0126BCA22A42FF47001573DF /* Assets.xcassets */; };
 		0126BCA62A42FF47001573DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0126BCA52A42FF47001573DF /* Preview Assets.xcassets */; };
 		0126BCB02A42FF48001573DF /* ObservableMacroTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BCAF2A42FF48001573DF /* ObservableMacroTestTests.swift */; };
 		0126BCBA2A42FF48001573DF /* ObservableMacroTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BCB92A42FF48001573DF /* ObservableMacroTestUITests.swift */; };
 		0126BCBC2A42FF48001573DF /* ObservableMacroTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BCBB2A42FF48001573DF /* ObservableMacroTestUITestsLaunchTests.swift */; };
+		0126BCCB2A431A69001573DF /* DonutMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126BCCA2A431A69001573DF /* DonutMenu.swift */; };
+		0167BDB62A4323DE0053F587 /* FoodTruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167BDB52A4323DE0053F587 /* FoodTruckModel.swift */; };
+		0167BDB82A4324300053F587 /* Donut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167BDB72A4324300053F587 /* Donut.swift */; };
+		0167BDBA2A4324E20053F587 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167BDB92A4324E20053F587 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		0126BC9B2A42FF46001573DF /* ObservableMacroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableMacroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0126BC9E2A42FF46001573DF /* ObservableMacroTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMacroTestApp.swift; sourceTree = "<group>"; };
-		0126BCA02A42FF46001573DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0126BCA22A42FF47001573DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0126BCA52A42FF47001573DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0126BCAB2A42FF48001573DF /* ObservableMacroTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableMacroTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		0126BCB52A42FF48001573DF /* ObservableMacroTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableMacroTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0126BCB92A42FF48001573DF /* ObservableMacroTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMacroTestUITests.swift; sourceTree = "<group>"; };
 		0126BCBB2A42FF48001573DF /* ObservableMacroTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMacroTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0126BCCA2A431A69001573DF /* DonutMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutMenu.swift; sourceTree = "<group>"; };
+		0167BDB52A4323DE0053F587 /* FoodTruckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckModel.swift; sourceTree = "<group>"; };
+		0167BDB72A4324300053F587 /* Donut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donut.swift; sourceTree = "<group>"; };
+		0167BDB92A4324E20053F587 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,11 @@
 		0126BC9D2A42FF46001573DF /* ObservableMacroTest */ = {
 			isa = PBXGroup;
 			children = (
+				0167BDB22A4323B10053F587 /* Models */,
 				0126BC9E2A42FF46001573DF /* ObservableMacroTestApp.swift */,
-				0126BCA02A42FF46001573DF /* ContentView.swift */,
 				0126BCA22A42FF47001573DF /* Assets.xcassets */,
 				0126BCA42A42FF47001573DF /* Preview Content */,
+				0126BCCA2A431A69001573DF /* DonutMenu.swift */,
 			);
 			path = ObservableMacroTest;
 			sourceTree = "<group>";
@@ -125,6 +132,16 @@
 				0126BCBB2A42FF48001573DF /* ObservableMacroTestUITestsLaunchTests.swift */,
 			);
 			path = ObservableMacroTestUITests;
+			sourceTree = "<group>";
+		};
+		0167BDB22A4323B10053F587 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0167BDB52A4323DE0053F587 /* FoodTruckModel.swift */,
+				0167BDB72A4324300053F587 /* Donut.swift */,
+				0167BDB92A4324E20053F587 /* Order.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0126BCA12A42FF46001573DF /* ContentView.swift in Sources */,
+				0167BDBA2A4324E20053F587 /* Order.swift in Sources */,
+				0167BDB62A4323DE0053F587 /* FoodTruckModel.swift in Sources */,
+				0167BDB82A4324300053F587 /* Donut.swift in Sources */,
+				0126BCCB2A431A69001573DF /* DonutMenu.swift in Sources */,
 				0126BC9F2A42FF46001573DF /* ObservableMacroTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
