@@ -25,5 +25,6 @@ struct DonutMenu: View {
 }
 
 #Preview {
-    DonutMenu(model: FoodTruckModel(orders: [Order()], donuts: [Donut()]))
+    DonutMenu(model:
+                FoodTruckModel(donuts: [Donut(name: "Glazed"), Donut(name: "Mochi"), Donut(name: "Eclair"), Donut(name: "Cruller"), Donut(name: "Fritter"), Donut(name: "Boston Cream"), Donut(name: "Jelly"), Donut(name: "Beignet")]))
 }

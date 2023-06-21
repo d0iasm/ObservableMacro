@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ObservableMacroTestApp: App {
-    @State private var model = FoodTruckModel(orders: [Order()], donuts: [Donut()])
+    @State private var model = FoodTruckModel(donuts: [Donut(name: "Glazed"), Donut(name: "Mochi"), Donut(name: "Eclair"), Donut(name: "Cruller"), Donut(name: "Fritter"), Donut(name: "Boston Cream"), Donut(name: "Jelly"), Donut(name: "Beignet")])
     
     var body: some Scene {
         WindowGroup {

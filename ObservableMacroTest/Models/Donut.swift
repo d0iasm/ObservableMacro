@@ -9,5 +9,9 @@ import Foundation
 import Observation
 
 @Observable final class Donut: Identifiable {
-    var name = "sample name"
+    var name = "Creative Donut"
+    
+    init(name: String) {
+        self.name = name
+    }
 }

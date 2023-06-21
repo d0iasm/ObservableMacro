@@ -9,5 +9,5 @@ import Foundation
 import Observation
 
 @Observable final class Order: Identifiable {
-    var title = "Sample Title"
+    var donut: [Donut] = []
 }

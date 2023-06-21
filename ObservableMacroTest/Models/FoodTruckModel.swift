@@ -9,11 +9,9 @@ import Foundation
 import Observation
 
 @Observable class FoodTruckModel {
-    var orders: [Order] = []
     var donuts: [Donut] = []
     
-    init(orders: [Order], donuts: [Donut]) {
-        self.orders = orders
+    init(donuts: [Donut]) {
         self.donuts = donuts
     }
     
