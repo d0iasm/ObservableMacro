@@ -13,18 +13,18 @@ struct DonutMenu: View {
     var body: some View {
         List {
             Section("Donuts") {
+                Button("Add new donut") {
+                    model.addDonut(donut: Donut(name: "Creative Donut " + String(model.count)))
+                    model.addCount()
+                }.accessibilityIdentifier("AddNewDonutButton")
                 ForEach(model.donuts) { donut in
                     Text(donut.name)
                 }
-                Button("Add new donut") {
-                    model.addDonut()
-                }
             }
-        }
+        }.accessibilityIdentifier("DonutsList")
     }
 }
 
 #Preview {
-    DonutMenu(model:
-                FoodTruckModel(donuts: [Donut(name: "Glazed"), Donut(name: "Mochi"), Donut(name: "Eclair"), Donut(name: "Cruller"), Donut(name: "Fritter"), Donut(name: "Boston Cream"), Donut(name: "Jelly"), Donut(name: "Beignet")]))
+    DonutMenu(model: FoodTruckModel())
 }
